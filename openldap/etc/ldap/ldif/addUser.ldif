@@ -1,0 +1,9 @@
+dn: uid=mrsu,ou=Users,dc=mrsu,dc=me
+objectClass: inetOrgPerson
+uid: suzhongping
+ou: Users
+cn: zhongping
+sn: Su
+givenName: suzhongping
+displayName:: 6IuP5Lit5bmzCg==
+mail: marioasu@163.com

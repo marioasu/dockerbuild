@@ -3,6 +3,7 @@ FROM ubuntu:16.04
 MAINTAINER mrsu <marioasu@163.com>
 
 RUN apt-get update && \
+    apt-get install -y software-properties-common && \
     apt-get install -y vim && \
     apt-get install -y net-tools && \
     apt-get install -y curl && \
@@ -15,6 +16,8 @@ RUN apt-get update && \
     dpkg-reconfigure locales && \
     ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
+ENV DEBIAN_FRONTEND=noninteractive
 ENV LANG=en_US.UTF-8
+
 COPY entrypoint.sh /
 CMD ["bash", "/entrypoint.sh"]

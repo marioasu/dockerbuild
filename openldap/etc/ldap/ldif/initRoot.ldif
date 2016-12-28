@@ -1,0 +1,10 @@
+dn: olcDatabase={1}mdb,cn=config
+changeType: modify
+replace: olcSuffix
+olcSuffix: dc=mrsu,dc=me
+-
+replace: olcRootDN
+olcRootDN: cn=admin,dc=mrsu,dc=me
+-
+replace: olcRootPW
+olcRootPw: %SLAPD_ROOT_PASSWORD%

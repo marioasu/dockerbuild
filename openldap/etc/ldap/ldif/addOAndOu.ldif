@@ -1,0 +1,10 @@
+dn: dc=mrsu,dc=me
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+dc: mrsu
+o: mrsu.me
+
+dn: ou=Users,dc=mrsu,dc=me
+objectClass: organizationalUnit
+ou: Users
