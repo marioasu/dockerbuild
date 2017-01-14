@@ -1,0 +1,10 @@
+dn: cn=config
+changetype: modify
+add: olcTLSCACertificateFile
+olcTLSCACertificateFile: /etc/ldap/cacerts/ca.cert.pem
+-
+add: olcTLSCertificateFile
+olcTLSCertificateFile: /etc/ldap/certs/ldap.mrsu.me.crt
+-
+add: olcTLSCertificateKeyFile
+olcTLSCertificateKeyFile: /etc/ldap/certs/ldap.mrsu.me.key
