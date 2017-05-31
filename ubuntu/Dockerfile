@@ -11,8 +11,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     > /var/lib/apt/extended_states && \
-    update-locale LANG=C.UTF-8 LC_MESSAGES=POSIX && \
-    locale-gen en_US.UTF-8 && \
+    apt-get install language-pack-en-base && \
     dpkg-reconfigure locales && \
     ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
