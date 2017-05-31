@@ -12,3 +12,4 @@ nginx-php: nginx-php/Dockerfile
 	docker build -f $< -t mrsu/$@ $(dir $<)
 openldap: openldap/Dockerfile
 	docker build -f $< -t mrsu/$@ $(dir $<)
+.PHONY: ubuntu supervisord nginx nginx-php
