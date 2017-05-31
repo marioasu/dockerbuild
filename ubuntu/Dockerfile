@@ -3,7 +3,7 @@ FROM ubuntu:16.04
 MAINTAINER mrsu <marioasu@163.com>
 
 RUN apt-get update && \
-    apt-get install -y software-properties-common && \
+    apt-get install -y software-properties-common apt-utils && \
     apt-get install -y vim && \
     apt-get install -y net-tools && \
     apt-get install -y curl && \
