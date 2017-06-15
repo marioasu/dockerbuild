@@ -3,7 +3,7 @@ default: ubuntu
 all: ubuntu supervisord nginx nginx-php
 
 ubuntu: ubuntu/Dockerfile
-	docker build -f $< -t mrsu/$@ $(dir $<)
+	docker build -f $< -t mrsu/$@:16.04 $(dir $<)
 supervisord: supervisord/Dockerfile
 	docker build -f $< -t mrsu/$@ $(dir $<)
 nginx: nginx/Dockerfile

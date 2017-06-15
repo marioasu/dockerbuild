@@ -1,4 +1,4 @@
-FROM mrsu/ubuntu:latest
+FROM mrsu/ubuntu:16.04
 
 MAINTAINER mrsu <marioasu@163.com>
 

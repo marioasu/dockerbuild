@@ -9,11 +9,11 @@ RUN apt-get update && \
     apt-get install -y curl && \
     apt-get install -y iputils-ping && \
     apt-get clean && \
+    apt-get install -y language-pack-en-base && \
+    locale-gen en_US.UTF-8 && \
+    ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     rm -rf /var/lib/apt/lists/* && \
-    > /var/lib/apt/extended_states && \
-    apt-get install language-pack-en-base && \
-    dpkg-reconfigure locales && \
-    ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+    > /var/lib/apt/extended_states
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV LANG=en_US.UTF-8
