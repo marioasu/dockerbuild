@@ -1,6 +1,7 @@
 FROM ubuntu:16.04
+MAINTAINER mrsu <mrsuzhongping@gmail.com>
 
-MAINTAINER mrsu <marioasu@163.com>
+COPY etc /etc
 
 RUN apt-get update && \
     apt-get install -y software-properties-common apt-utils && \

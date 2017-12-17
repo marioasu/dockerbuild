@@ -1,6 +1,6 @@
 FROM mrsu/ubuntu:16.04
 
-MAINTAINER mrsu <marioasu@163.com>
+MAINTAINER mrsu <suzhongping@gmail.com>
 
 RUN apt-get update && \
     apt-get install -y supervisor && \
