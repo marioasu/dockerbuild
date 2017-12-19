@@ -7,7 +7,5 @@ RUN yum install -y nginx && \
 COPY etc /etc
 COPY config /config
 
-ENTRYPOINT ["nginx"]
-
 EXPOSE 80
 EXPOSE 443

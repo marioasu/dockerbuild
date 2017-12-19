@@ -1,5 +1,5 @@
 FROM mrsu/nginx
-MAINTAINER mrsu <marioasu@163.com>
+MAINTAINER mrsu <mrsuzhongping@gmail.com>
 
 RUN apt-get update && \
     apt-get install -y php7.0-fpm && \
