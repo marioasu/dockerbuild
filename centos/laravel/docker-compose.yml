@@ -1,0 +1,14 @@
+version: '2'
+services:
+  web:
+    image: mrsu/faq
+    restart: always
+    environment:
+      - DOMAIN_NAME=faq.com
+      - WEB_HOME=/home/mrsu/work/learn/php/laravel/faq
+      - USER_GID=1001
+      - USER_ID=1001
+    volumes:
+      - '/home/mrsu/work/learn/php/laravel/faq:/home/mrsu/work/learn/php/laravel/faq'
+    ports:
+      - '8811:80'
